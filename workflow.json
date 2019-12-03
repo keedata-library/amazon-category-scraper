@@ -144,6 +144,7 @@
   }, {
     "name": "Smartphones",
     "type": "Start",
+    "is_start": true,
     "start_mode": "clean",
     "start_urls": ["https://www.amazon.fr/b/?node=218193031"],
     "http_method": "get",
