@@ -1,4 +1,33 @@
 {
   "name": "Amazon Fast Category Scraper",
-  "description": "Scrap all products in an amazon category or search listing."
+  "description": "Scrap all products in an amazon category or search listing.",
+  "easyconfig": [{
+    "name": "Start Name",
+    "type": "input",
+    "value": "Smartphones",
+    "required": true,
+    "actions": [
+      {
+        "type": "tasks",
+        "_id": "5e43ecb1038a9626ca059976",
+        "fields": ["name"],
+        "method": "set",
+        "args": []
+      }
+    ]
+  },{
+    "name": "List of Amazon urls (category or search page)",
+    "type": "list",
+    "value": ["https://www.amazon.fr/b/?node=218193031"],
+    "required": true,
+    "actions": [
+      {
+        "type": "tasks",
+        "_id": "5e43ecb1038a9626ca059976",
+        "fields": ["start_urls"],
+        "method": "set",
+        "args": []
+      }
+    ]
+  }]
 }
